@@ -6,22 +6,16 @@ A collection of agent skills that extend capabilities across planning, developme
 
 These skills help you think through problems before writing code.
 
-- **write-a-prd** — Create a PRD through an interactive interview, codebase exploration, and module design. Filed as a GitHub issue.
+- **to-prd** — Turn the current conversation context into a PRD and submit it as a GitHub issue. No interview — just synthesizes what you've already discussed.
 
   ```
-  npx skills@latest add mattpocock/skills/write-a-prd
+  npx skills@latest add mattpocock/skills/to-prd
   ```
 
-- **prd-to-plan** — Turn a PRD into a multi-phase implementation plan using tracer-bullet vertical slices.
+- **to-issues** — Break any plan, spec, or PRD into independently-grabbable GitHub issues using vertical slices.
 
   ```
-  npx skills@latest add mattpocock/skills/prd-to-plan
-  ```
-
-- **prd-to-issues** — Break a PRD into independently-grabbable GitHub issues using vertical slices.
-
-  ```
-  npx skills@latest add mattpocock/skills/prd-to-issues
+  npx skills@latest add mattpocock/skills/to-issues
   ```
 
 - **grill-me** — Get relentlessly interviewed about a plan or design until every branch of the decision tree is resolved.
@@ -58,7 +52,7 @@ These skills help you write, refactor, and fix code.
   npx skills@latest add mattpocock/skills/triage-issue
   ```
 
-- **improve-codebase-architecture** — Explore a codebase for architectural improvement opportunities, focusing on deepening shallow modules and improving testability.
+- **improve-codebase-architecture** — Find deepening opportunities in a codebase, informed by the domain language in `CONTEXT.md` and the decisions in `docs/adr/`.
 
   ```
   npx skills@latest add mattpocock/skills/improve-codebase-architecture
